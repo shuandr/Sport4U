@@ -4360,22 +4360,22 @@ html.is-reveal-open {
 
 @font-face {
   font-family: Posterama;
-  src: url("../fonts/PosteramaTextLight.woff");
+  src: url("../Sport4U/fonts/PosteramaTextLight.woff");
   font-weight: normal; }
 
 @font-face {
   font-family: Posterama;
-  src: url("../fonts/PosteramaTextBlack.woff");
+  src: url("../Sport4U/fonts/PosteramaTextBlack.woff");
   font-weight: 700; }
 
 @font-face {
   font-family: Posterama;
-  src: url("../fonts/PosteramaTextSemibold.woff");
+  src: url("../Sport4U/fonts/PosteramaTextSemibold.woff");
   font-weight: 500; }
 
 @font-face {
   font-family: Posterama;
-  src: url("../fonts/PosteramaTextThin.woff");
+  src: url("../Sport4U/fonts/PosteramaTextThin.woff");
   font-weight: 100; }
 
 .uppercase {
