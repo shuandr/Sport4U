@@ -1,0 +1,198 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Sport4U | SET YOUR GOAL & ...</title>
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		<link rel="stylesheet" href="assets/css/app.css">
+		<link rel="stylesheet" href="assets/css/fullpage.min.css">
+		<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+		<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+	</head>
+	<body>
+		<!-- <div id="preloader">
+		      <div id="pre-logo"></div>
+		    </div> -->
+		<div ng-app="sport4U" ng-controller="sportCtrl" >
+			<div class="ride-bg fixed-bg" >
+				
+				<div class="ride-ptrn"></div>
+			</div>
+			<div class="hero">
+				<div class="main-tel">
+								<a class="white" href="tel://+380636782132"><i class="fa fa-phone-square fa-2x" style="transform: translateY(0.4rem); "></i>  063-678-21-32</a>
+							</div>
+							<div class="social-icons">
+								<a href="https://www.facebook.com/Run4Uclub" target="_blank">
+								<i class="fa fa-facebook-square fa-2x"></i></a>
+								<a href="https://www.facebook.com/SwimForU" target="_blank">
+								<i class="fa fa-facebook-square fa-2x"></i></a>
+								<a href="https://www.instagram.com/_sport4u_" target="_blank">
+								<i class="fa fa-instagram fa-2x"></i></a>
+								
+							</div>		<div class="logo text-center">
+					<img src="assets/img/ride-4U_logo.svg" alt="">
+				</div>
+				<div class="hero-img">
+					<img src="assets/img/ride_hero_inner.png" alt="">
+				</div>
+			</div>
+			<div class="white-bg" >
+				
+				<h1 class="text-center ride-1 uppercase">наші <span class="bold ride-2">програми</span></h1><br>
+			</div>
+			<div class="grid-container">
+				
+				<div class="accordion" data-accordion>
+					
+					<div class="accordion-item" ng-repeat="prog in programs.ride" data-accordion-item>
+						<a href="" class="accordion-title">
+							<div class="prog-title">
+								<img src="assets/img/programs/{[{prog.ID}]}.png" alt="">
+								<div class="prog-name">
+									
+									<h1 class="text-center white bold uppercase">{[{prog.name}]}</h1>
+								</div>
+								<div class="prog-features text-right">
+									<div class="grid-x ">
+										<div class="cell medium-shrink">
+											<div class="grid-x  align-bottom">
+												<div class="cell shrink"><span class=" bold bigger">{[{prog.duration}]}</span></div>
+												<div class="cell shrink">початок: <span class=" bold"> {[{prog.start}]}</span><br>
+												забіг: <span class=" bold"> {[{prog.final}]}</span></div>
+											</div>
+										</div>
+										<div class="cell medium-auto">
+											<div class="grid-x  align-bottom">
+												<div class="cell auto"><span class="bold uppercase">мета: </span>{[{prog.goal}]}</div>
+												<div class="cell shrink"><span class="bold bigger">{[{prog.price}]}</span> грн</div>
+											</div>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+							<div class="white-bg">
+								<h3 class="text-center ride-1 " >детальніше <i class="fa fa-arrow-circle-down "></i></h3><br>
+							</div>
+						</a>
+						
+						<div class="accordion-content" data-tab-content>
+							<div class="grid-x">
+								<div class="medium-6 cell">
+									<h5 class="text-center ride-2 uppercase bold">В ціну включено:</h5>
+									<ol>
+										<li class="ride-1 include-list" ng-repeat="x in prog.include">{[{ x }]}</li>
+									</ol>
+								</div>
+								<div class="medium-6 cell">
+									<h5 class="text-center ride-2 uppercase bold">Тренування:</h5>
+									<p class="big ride-2">Аквапарк «ПЛЯЖ», <span class="bold">7:00</span>ранку або <span class="bold">8:00</span> ранку <br><span class="bold"> ПН | СР | ПТ</span> або <span class="bold">ВТ | ЧТ | СБ</span> на вибір</p><br>
+									<ul>
+										<li class="ride-1 include-list" ng-repeat="x in prog.descr">{[{ x }]}</li>
+									</ul>
+									
+								</div>
+							</div><br>
+							<div class="text-center">
+								<h4 class="ride-2 bold">безкоштовне пробне тренування</h4>
+								<button class="button large white text-center uppercase bold ride-bg">записатись</button>
+							</div>
+						</div><br>
+					</div>
+				</div>
+			</div>
+			<div class="grid-container">
+				<div id="feedback-4u">
+					<h1 class="text-center white uppercase">відгуки <span class="bold">учасників</span></h1><br>
+					<div class="grid-x  grid-padding-x small-up-1 large-up-2" data-equalizer data-equalize-by-row="true" >
+						<div class="cell" ng-repeat="quote in feedbacks">
+							<div class="card white-bg" data-equalizer-watch>
+								<div class="grid-x">
+									<div class="cell small-12 medium-shrink text-center">
+										<img src="assets/img/{[{quote.ID}]}.jpg">
+									</div>
+									<div class="cell small-12 medium-auto">
+										<div class="card-section">
+											<h6 class="sport-1 bold uppercase">{[{quote.name}]} <br>
+											<span class="occupy sport-2">{[{quote.occupy}]}</span></h6>
+											<p>{[{quote.text}]}</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><br><br>	<div class="section white-bg fp-auto-height">
+				<h1 class="text-center sport-1 uppercase">наші <span class="bold sport-2">партнери</span></h1>
+				<div id="partners" class="owl-carousel owl-theme gallery-logos">
+					
+					<img class="owl-lazy dark-gray"  src="assets/img/partners/02.svg">
+					<img class="owl-lazy dark-gray"  src="assets/img/partners/01.svg">
+					<img class="owl-lazy dark-gray"  src="assets/img/partners/03.svg">
+					<img class="owl-lazy dark-gray"  src="assets/img/partners/04.svg">
+					<img class="owl-lazy dark-gray"  src="assets/img/partners/05.svg">
+					<img class="owl-lazy dark-gray"  src="assets/img/partners/06.png">
+					<img class="owl-lazy dark-gray"  src="assets/img/partners/07.svg">
+					<img class="owl-lazy dark-gray"  src="assets/img/partners/08.svg">
+					<img class="owl-lazy dark-gray"  src="assets/img/partners/09.svg">
+				</div><br><br>
+			</div>
+			<footer>
+				<div class="grid-x small-up-3 medium-up-6 text-center">
+					<div class="cell ">
+						<div class="contacts">
+							<div class="social-icons">
+								<a class="white" href="tel://+380636782132"> 063-678-21-32</a><br><br>
+								<a class="run-2" href="https://www.facebook.com/Run4Uclub" target="_blank">
+								<i class="fa fa-facebook-square fa-2x"></i></a>
+								<a class="swim-2"href="https://www.facebook.com/SwimForU" target="_blank">
+								<i class="fa fa-facebook-square fa-2x"></i></a>
+								<a class="sport-2"href="https://www.instagram.com/_sport4u_" target="_blank">
+								<i class="fa fa-instagram fa-2x"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="cell foot-logo shrink sport-ho">
+						<a href="index.html">
+							<img src="assets/img/SPORT-4U_logo.svg" alt="">
+							
+						</a>
+					</div>
+					<div class="cell foot-logo shrink run-ho">
+						<a href="run.html">
+							<img src="assets/img/RUN-4U_logo.svg" alt="">
+						</a>
+					</div>
+					<div class="cell foot-logo shrink swim-ho">
+						<a href="swim.html">
+							<img src="assets/img/SWIM-4U_logo.svg" alt="">
+						</a>
+					</div>
+					<div class="cell foot-logo shrink ride-ho">
+						<a href="ride.html">
+							<img src="assets/img/RIDE-4U_logo.svg" alt="">
+						</a>
+					</div>
+					<div class="cell foot-logo shrink rock-ho">
+						<a href="rock.html">
+							<img src="assets/img/Rock-4U_logo.svg" alt="">
+						</a>
+					</div>
+				</div>
+				<p class="text-center">© Всі права застережено. 2019</p><br>
+				
+			</footer>		
+
+		<script src="assets/js/app.js"></script>
+		<script src="assets/js_plugins/fullpage.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-sanitize.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-route.js"></script>
+		<script src="assets/js_plugins/myAngular.js"></script>
+		<script src="assets/js_plugins/owl.carousel.min.js"></script>
+	</body>
+</html>
