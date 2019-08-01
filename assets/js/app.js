@@ -21799,9 +21799,12 @@ setTimeout(function () {
     //options here
     autoScrolling: true
   });
-}, 500);
+}, 800);
 setTimeout(function () {
   jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#pre-logo').fadeOut(); // will first fade out the loading animation
+
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#preloader').fadeOut('slow');
     jquery__WEBPACK_IMPORTED_MODULE_0___default()("#owl-carousel-run").owlCarousel({
       loop: true,
       rtl: true,
@@ -21884,12 +21887,11 @@ setTimeout(function () {
     });
   });
 }, 1000);
-jquery__WEBPACK_IMPORTED_MODULE_0___default()(window).load(function () {
-  // makes sure the whole site is loaded
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('#pre-logo').fadeOut(); // will first fade out the loading animation
-
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('#preloader').fadeOut('slow'); // will fade out the white DIV that covers the website.
-}); // debugger;
+/*$(window).load(function() { // makes sure the whole site is loaded
+    $('#pre-logo').fadeOut(); // will first fade out the loading animation
+    $('#preloader').fadeOut('slow'); // will fade out the white DIV that covers the website.
+});*/
+// debugger;
 
 /***/ }),
 

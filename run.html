@@ -18,9 +18,9 @@
 		<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
 	</head>
 	<body>
-		<!-- <div id="preloader">
+		<div id="preloader">
 			<div id="pre-logo"></div>
-		</div> -->
+		</div>
 		
 		<div ng-app="sport4U" ng-controller="sportCtrl" >
 			<div class="run-bg fixed-bg" >
@@ -50,8 +50,8 @@
 				<h1 class="text-center run-1 uppercase">наші <span class="bold run-2">програми</span></h1><br>
 			</div>
 			<div class="grid-container">
-				
-				<div class="accordion" data-accordion>
+				<div class="grid-x align-center">
+				<div class="cell large-9  accordion" data-accordion>
 					
 					<div class="accordion-item" ng-repeat="prog in programs.run" data-accordion-item>
 						<a href="" class="accordion-title">
@@ -61,26 +61,18 @@
 									
 									<h1 class="text-center white bold uppercase">{[{prog.name}]}</h1>
 								</div>
-								<div class="prog-features text-right">
-									<div class="grid-x ">
-										<div class="cell medium-shrink">
-											<div class="grid-x  align-bottom">
-												<div class="cell shrink"><span class=" bold bigger">{[{prog.duration}]}</span></div>
-												<div class="cell shrink">початок: <span class=" bold"> {[{prog.start}]}</span><br>
-												забіг: <span class=" bold"> {[{prog.final}]}</span></div>
-											</div>
-										</div>
-										<div class="cell medium-auto">
-											<div class="grid-x  align-bottom">
-												<div class="cell auto"><span class="bold uppercase">мета: </span>{[{prog.goal}]}</div>
-												<div class="cell shrink"><span class="bold bigger">{[{prog.price}]}</span> грн</div>
-											</div>
-										</div>
-									</div>
+								<div class="prog-features ">
+									<h5 class="cell text-center"><span class="s-bold uppercase">мета: </span>{[{prog.goal}]}</h5>
 									
+									<div class="grid-x  align-bottom">
+										<div class="cell shrink"><span class=" s-bold bigger">{[{prog.duration}]}</span></div>
+										<div class="cell auto text-center">початок: <span class=" s-bold"> {[{prog.start}]}</span><br>
+										забіг: <span class=" s-bold"> {[{prog.final}]}</span></div>
+										<div class="cell shrink"><span class="s-bold bigger">{[{prog.price}]}</span> грн</div>
+									</div>
 								</div>
 							</div>
-							<div class="white-bg">
+							<div class="white-bg"><br>
 								<h3 class="text-center run-1 " >детальніше <i class="fa fa-arrow-circle-down "></i></h3><br>
 							</div>
 						</a>
@@ -88,13 +80,13 @@
 						<div class="accordion-content" data-tab-content>
 							<div class="grid-x">
 								<div class="medium-6 cell">
-									<h5 class="text-center run-2 uppercase bold">В ціну включено:</h5>
+									<h5 class="text-center run-2 uppercase s-bold">В ціну включено:</h5>
 									<ol>
 										<li class="run-1 include-list" ng-repeat="x in prog.include">{[{ x }]}</li>
 									</ol>
 								</div>
 								<div class="medium-6 cell">
-									<h5 class="text-center run-2 uppercase bold">Графік тренувань на вибір:</h5>
+									<h5 class="text-center run-2 uppercase s-bold">Графік тренувань на вибір:</h5>
 									<ul>
 										<li class="run-1 include-list" ng-repeat="x in prog.descr">{[{ x }]}</li>
 									</ul>
@@ -102,11 +94,12 @@
 								</div>
 							</div><br>
 							<div class="text-center">
-								<h4 class="run-2 bold">безкоштовне пробне тренування</h4>
-								<button class="button large white text-center uppercase bold run-bg">записатись</button>
+								<h4 class="run-2 s-bold">безкоштовне пробне тренування</h4>
+								<button class="button large white text-center uppercase s-bold run-bg">записатись</button>
 							</div>
 						</div><br>
 					</div>
+				</div>
 				</div>
 			</div>
 			<div class="grid-container">
@@ -135,15 +128,15 @@
 				<h1 class="text-center sport-1 uppercase">наші <span class="bold sport-2">партнери</span></h1>
 				<div id="partners" class="owl-carousel owl-theme gallery-logos">
 					
-					<img class="owl-lazy dark-gray"  src="assets/img/partners/02.svg">
-					<img class="owl-lazy dark-gray"  src="assets/img/partners/01.svg">
-					<img class="owl-lazy dark-gray"  src="assets/img/partners/03.svg">
-					<img class="owl-lazy dark-gray"  src="assets/img/partners/04.svg">
-					<img class="owl-lazy dark-gray"  src="assets/img/partners/05.svg">
-					<img class="owl-lazy dark-gray"  src="assets/img/partners/06.png">
-					<img class="owl-lazy dark-gray"  src="assets/img/partners/07.svg">
-					<img class="owl-lazy dark-gray"  src="assets/img/partners/08.svg">
-					<img class="owl-lazy dark-gray"  src="assets/img/partners/09.svg">
+					<img class="owl-lazy" style="width: auto;" src="assets/img/partners/02.svg">
+					<img class="owl-lazy" style="width: auto;" src="assets/img/partners/01.svg">
+					<img class="owl-lazy" style="width: auto;" src="assets/img/partners/03.svg">
+					<img class="owl-lazy" style="width: auto;" src="assets/img/partners/04.svg">
+					<img class="owl-lazy" style="width: auto;" src="assets/img/partners/05.svg">
+					<img class="owl-lazy" style="width: auto;" src="assets/img/partners/06.png">
+					<img class="owl-lazy" style="width: auto;" src="assets/img/partners/07.svg">
+					<img class="owl-lazy" style="width: auto;" src="assets/img/partners/08.svg">
+					<img class="owl-lazy" style="width: auto;" src="assets/img/partners/09.svg">
 				</div><br><br>
 			</div>
 			<footer>
