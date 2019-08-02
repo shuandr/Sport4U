@@ -21,37 +21,35 @@
 		<div id="preloader">
 			<div id="pre-logo"></div>
 		</div>
-		
 		<div ng-app="sport4U" ng-controller="sportCtrl" >
-			<div class="run-bg fixed-bg" >
-				<div class="run-ptrn"></div>
-			</div>
+			<div class="run-ptrn fixed-bg" ></div>
+			
 			<div class="hero">
 				<div class="main-tel">
-								<a class="white" href="tel://+380636782132"><i class="fa fa-phone-square fa-2x" style="transform: translateY(0.4rem); "></i>  063-678-21-32</a>
-							</div>
-							<div class="social-icons">
-								<a href="https://www.facebook.com/Run4Uclub" target="_blank">
-								<i class="fa fa-facebook-square fa-2x"></i></a>
-								<a href="https://www.facebook.com/SwimForU" target="_blank">
-								<i class="fa fa-facebook-square fa-2x"></i></a>
-								<a href="https://www.instagram.com/_sport4u_" target="_blank">
-								<i class="fa fa-instagram fa-2x"></i></a>
-								
-							</div>		<div class="logo text-center">
-					<img src="assets/img/run-4U_logo.svg" alt="">
+					<a class="white" href="tel://+380636782132"><i class="fa fa-phone-square fa-2x" style="transform: translateY(0.4rem); "></i>  063-678-21-32</a>
 				</div>
-				<div class="hero-img">
-					<img src="assets/img/run_hero_inner.png" alt="">
+				<div class="social-icons">
+					<a href="https://www.facebook.com/Run4Uclub" target="_blank">
+					<i class="fa fa-facebook-square fa-2x"></i></a>
+					<a href="https://www.facebook.com/SwimForU" target="_blank">
+					<i class="fa fa-facebook-square fa-2x"></i></a>
+					<a href="https://www.instagram.com/_sport4u_" target="_blank">
+					<i class="fa fa-instagram fa-2x"></i></a>
+					
+				</div>		<div class="sport-type">
+					<div class="sport-type-logo text-center">
+						<img src="assets/img/run-4U_logo.svg" alt="">
+					</div>
+					<img src="assets/img/run_hero_inner.png" alt="" class="sport-type-hero">
 				</div>
+				
 			</div>
 			<div class="white-bg" >
-				
 				<h1 class="text-center run-1 uppercase">наші <span class="bold run-2">програми</span></h1><br>
 			</div>
 			<div class="grid-container">
-				<div class="grid-x align-center">
-				<div class="cell large-9  accordion" data-accordion>
+				
+				<div class=" accordion" data-accordion>
 					
 					<div class="accordion-item" ng-repeat="prog in programs.run" data-accordion-item>
 						<a href="" class="accordion-title">
@@ -61,15 +59,15 @@
 									
 									<h1 class="text-center white bold uppercase">{[{prog.name}]}</h1>
 								</div>
-								<div class="prog-features ">
-									<h5 class="cell text-center"><span class="s-bold uppercase">мета: </span>{[{prog.goal}]}</h5>
-									
-									<div class="grid-x  align-bottom">
-										<div class="cell shrink"><span class=" s-bold bigger">{[{prog.duration}]}</span></div>
-										<div class="cell auto text-center">початок: <span class=" s-bold"> {[{prog.start}]}</span><br>
-										забіг: <span class=" s-bold"> {[{prog.final}]}</span></div>
-										<div class="cell shrink"><span class="s-bold bigger">{[{prog.price}]}</span> грн</div>
-									</div>
+							</div>
+							<div class="prog-features ">
+								<h5 class="cell text-center"><span class="s-bold uppercase">мета: </span>{[{prog.goal}]}</h5>
+								
+								<div class="grid-x  align-bottom">
+									<div class="cell medium-auto text-center">початок: <span class=" s-bold"> {[{prog.start}]}</span><br>
+									забіг: <span class=" s-bold"> {[{prog.final}]}</span></div>
+									<div class="cell small-6 medium-shrink"><span class=" s-bold bigger">{[{prog.duration}]}</span></div>
+									<div class="cell small-6 medium-shrink"><span class="s-bold bigger">{[{prog.price}]}</span> грн</div>
 								</div>
 							</div>
 							<div class="white-bg"><br>
@@ -100,7 +98,6 @@
 						</div><br>
 					</div>
 				</div>
-				</div>
 			</div>
 			<div class="grid-container">
 				<div id="feedback-4u">
@@ -124,20 +121,21 @@
 						</div>
 					</div>
 				</div>
-			</div><br><br>	<div class="section white-bg fp-auto-height">
-				<h1 class="text-center sport-1 uppercase">наші <span class="bold sport-2">партнери</span></h1>
-				<div id="partners" class="owl-carousel owl-theme gallery-logos">
-					
-					<img class="owl-lazy" style="width: auto;" src="assets/img/partners/02.svg">
-					<img class="owl-lazy" style="width: auto;" src="assets/img/partners/01.svg">
-					<img class="owl-lazy" style="width: auto;" src="assets/img/partners/03.svg">
-					<img class="owl-lazy" style="width: auto;" src="assets/img/partners/04.svg">
-					<img class="owl-lazy" style="width: auto;" src="assets/img/partners/05.svg">
-					<img class="owl-lazy" style="width: auto;" src="assets/img/partners/06.png">
-					<img class="owl-lazy" style="width: auto;" src="assets/img/partners/07.svg">
-					<img class="owl-lazy" style="width: auto;" src="assets/img/partners/08.svg">
-					<img class="owl-lazy" style="width: auto;" src="assets/img/partners/09.svg">
-				</div><br><br>
+			</div><br><br>	<div class="section white-bg ">
+				
+					<h1 class="text-center sport-1 uppercase">наші <span class="bold sport-2">партнери</span></h1>
+					<div id="partners" class="owl-carousel owl-theme gallery-logos">
+						
+						<img class="owl-lazy" style="width: auto;" src="assets/img/partners/02.svg">
+						<img class="owl-lazy" style="width: auto;" src="assets/img/partners/01.svg">
+						<img class="owl-lazy" style="width: auto;" src="assets/img/partners/03.svg">
+						<img class="owl-lazy" style="width: auto;" src="assets/img/partners/04.svg">
+						<img class="owl-lazy" style="width: auto;" src="assets/img/partners/05.svg">
+						<img class="owl-lazy" style="width: auto;" src="assets/img/partners/06.png">
+						<img class="owl-lazy" style="width: auto;" src="assets/img/partners/07.svg">
+						<img class="owl-lazy" style="width: auto;" src="assets/img/partners/08.svg">
+						<img class="owl-lazy" style="width: auto;" src="assets/img/partners/09.svg">
+					</div><br><br>
 			</div>
 			<footer>
 				<div class="grid-x small-up-3 medium-up-6 text-center">
@@ -183,7 +181,8 @@
 				</div>
 				<p class="text-center">© Всі права застережено. 2019</p><br>
 				
-			</footer>		
+			</footer></div>
+		
 		<script src="assets/js/app.js"></script>
 		<script src="assets/js_plugins/fullpage.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
