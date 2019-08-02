@@ -21797,7 +21797,11 @@ setTimeout(function () {
   jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).foundation();
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('#fullpage').fullpage({
     //options here
-    autoScrolling: true
+    autoScrolling: true,
+    navigation: true,
+    navigationPosition: 'right',
+    navigationTooltips: [' ', 'наші переваги', 'we are in action', 'відгуки учасників', 'наші партнери'],
+    responsiveWidth: 640
   });
 }, 800);
 setTimeout(function () {
